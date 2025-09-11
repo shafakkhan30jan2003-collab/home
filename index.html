@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.S. COLLEGE , JEHANABAD(BIHAR)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+   
+           
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 sticky top-0 z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <img src="logo.webp" alt="AI College logo - modern geometric design with circuits and brain illustration representing technology and intelligence" class="inline mr-2 h-10 w-10 rounded" />
+                M.U UNIVERSITY
+            </div>
+            <nav class="nav">
+                <ul class="flex space-x-4">
+                    <li class="relative">
+                        <a href="#home" class="hover:text-blue-300">Home</a>
+                    </li>
+                    <li class="relative">
+                        <a href="#admission" class="hover:text-blue-300">Student Features</a>
+                        <ul class="submenu p-0 list-none">
+                            <li><a href="#admission">Online Admission Portal</a></li>
+                            <li><a href="#registration">Registration Form</a></li>
+                            <li><a href="#document-upload">Document Upload</a></li>
+                            <li><a href="#tracking">Application Tracking</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#courses" class="hover:text-blue-300">Courses & Curriculum</a>
+                        <ul class="submenu p-0 list-none">
+                            <li><a href="#courses">BBA, BCA, BCOM, BETECH, BA, BSC, MBA, MCA</a></li>
+                            <li><a href="#syllabus">Syllabus PDF</a></li>
+                            <li><a href="#credit">Credit Structure</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#lms" class="hover:text-blue-300">Online Classes , LMS</a>
+                        <ul class="submenu p-0 list-none">
+                            <li><a href="#recorded">Recorded Lectures</a></li>
+                            <li><a href="#live">Live Class Schedule</a></li>
+                            <li><a href="#integration">LMS Integration</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                       <a href="#assignments" class="hover:text-blue-300">Assignments & Quizzes</a>
+                       <ul class="dropdown-menu">
+                        <li>Upload Assignments</li>
+                         <li>Deadline Timer</li>
+                       <li>Marks & Feedback</li>
+                         <li>Submission Status</li>
+                           </ul>
+                          </li>
+                     <li class="nav-item dropdown">
+                    <a href="#dashboard" class="hover:text-blue-300">Student Dashboard</a>
+                         <ul class="dropdown-menu">
+                             <li>Profile, assignments, quizzes, attendance,</li>
+                              <li>grades, timetable, notices, fee status, messages</li>
+
+                         </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a href="#faculty" class="hover:text-blue-300">Faculty Features</a>
+                    <ul class="dropdown-menu">
+                        <li>Profile & timetable, </li> 
+                         <li>assignments/quizzes,</li> 
+                         <li>View student submissions,</li> 
+                         <li>Give marks & feedback,</li> 
+                         <li>Attendance management,</li> 
+                         <li>Announcements/notifications</li> 
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a href="#career" class="hover:text-blue-300">Career Portal</a>
+                    <ul class="dropdown-menu">
+                        <li>Job & internship listings,</li> 
+                        <li>Resume upload & builder,</li>
+                        <li>Placement drives info,</li>
+                        <li>Career guidance & resources,</li>
+                        <li>Application status tracking,</li>
+
+                    </ul>
+                    </li>
+                
+            </nav>
+            <div class="flex space-x-2">
+                <a href="login.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Login</a>
+                <a href="register.html" class="bg-green-600 px-4 py-2 rounded hover:bg-green-500">Register</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <div id="home" class="section active">
+        <!-- Hero Slider -->
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('college.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to S.S. COLLEGE</h1>
+                    <!-- <p class="text-lg mb-4">AI Education for the Future</p> -->
+                    <a href="#admission" class="bg-blue-600 px-6 py-3 rounded text-white hover:bg-blue-500">Apply Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('class\ room.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Advanced Courses </h1>
+                    <p class="text-lg mb-4">ML, Data Science, Robotics and More</p>
+                    <a href="#courses" class="bg-blue-600 px-6 py-3 rounded text-white hover:bg-blue-500">Explore Courses</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('library.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Connect with Us</h1>
+                    <p class="text-lg mb-4">Join Our library</p>
+                    <a href="#faculty" class="bg-blue-600 px-6 py-3 rounded text-white hover:bg-blue-500">Meet Faculty</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">About AI College</h2>
+                <img src="college.jpg" alt="AI College campus aerial view with modern buildings, green spaces, and students on pathways" class="mx-auto mb-6 w-full max-w-2xl rounded shadow" />
+                <p class="text-lg mb-4">S.S. College, Jehanabad, is one of the leading institutions of higher education in the district. It is affiliated with Magadh University, Bodh Gaya, and offers undergraduate and postgraduate courses in Arts, Science, and Commerce. The college was established with the aim of providing quality education to the students of Jehanabad and nearby areas.</p>
+                <p class="text-lg mb-4">The institution has a dedicated team of teachers who focus not only on academics but also on the overall personality development of students. Along with classroom teaching, students are encouraged to participate in debates, seminars, cultural events, and sports. The college also organizes social awareness programs and NSS activities to develop values of discipline and responsibility.
+
+S.S. College has a library with a good collection of books and journals and laboratories for practical learning. Over the years, the college has produced many successful alumni who are serving in different fields.
+
+S.S. College, Jehanabad, truly stands as a center of knowledge and opportunity for the youth.</p>
+              
+        </section>
+    </div>
+
+
+    <!-- Add some video -->
+<div class="video-section">
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/g_z9TMOymqk" frameborder="0" allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/o1XOhXq19o0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/U4PNmLisiS0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+    
+
+    <div id="contact" class="section bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+            <form class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow">
+                <input class="w-full p-2 mb-4 border rounded" placeholder="Name">
+                <input class="w-full p-2 mb-4 border rounded" type="email" placeholder="Email">
+                <textarea class="w-full p-2 mb-4 border rounded" rows="4" placeholder="Message"></textarea>
+                <button class="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-500">Send</button>
+            </form>
+            <div class="mt-8 text-center">
+                <p>Location: 123 AI Street, SF, CA</p>
+                <p>Email: info@aicollege.com | Phone: +1-123-456-7890</p>
+                <a href="#social" class="text-blue-600">Social Links</a>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Footer Section -->
+    <footer class="footer-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <!-- Footer Top -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Navigation Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-white hover:text-blue-200 block">Home</a></li>
+                        <li><a href="#" class="footer-link text-white hover:text-blue-200 block">About</a></li>
+                        <li><a href="#" class="footer-link text-white hover:text-blue-200 block">Services</a></li>
+                        <li><a href="#" class="footer-link text-white hover:text-blue-200 block">Portfolio</a></li>
+                        <li><a href="#" class="footer-link text-white hover:text-blue-200 block">Contact</a></li>
+                    </ul>
+                </div>
+
+                                <div>
+                    <h3 class="text-xl font-bold mb-4">Get In Touch</h3>
+                    <p class="text-white mb-2">Email: info@sscollegejehanabad.org</p>
+                    <p class="text-white mb-2">Phone: 0611-220004</p>
+                    <p class="text-white mb-2">Address: s s college, Jehanabad,BIHAR</p>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/Sscollagejehanabad/?utm_source=chatgpt.com" class="footer-link">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc29cd66-5890-4c2a-8c73-f131fdf65495.png" alt="Facebook social media icon with white 'f' symbol on blue background, representing the brand's official page for sharing updates and community engagement" class="w-10 h-10 rounded-full border-2 border-white hover:border-blue-200 transition-all" />
+                        </a>
+                        <a href="https://sscollegejehanabad.org/news.php?utm_source=chatgpt.com" class="footer-link">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/67bac201-843a-4c4d-b6a4-f714d4c56de8.png" alt="Twitter social media icon with white bird symbol on light blue background, symbolizing real-time communication and latest company news" class="w-10 h-10 rounded-full border-2 border-white hover:border-blue-200 transition-all" />
+                        </a>
+                        <a href="https://www.instagram.com/popular/s-s-college-jehanabad/?utm_source=chatgpt.com" class="footer-link">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c7a6371-c09a-4ebb-bb7f-758aa5e1ab36.png" alt="Instagram social media icon showing camera viewfinder in vibrant gradients of purple and orange, for showcasing visual content and behind-the-scenes moments" class="w-10 h-10 rounded-full border-2 border-white hover:border-blue-200 transition-all" />
+                        </a>
+                        <a href="https://www.instagram.com/popular/s-s-college-jehanabad/?utm_source=chatgpt.com" class="footer-link">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88ee2b19-704c-41d1-b212-7261d1d00ceb.png" alt="LinkedIn professional network icon with 'in' letters in dark blue, for building business connections and sharing industry insights" class="w-10 h-10 rounded-full border-2 border-white hover:border-blue-200 transition-all" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Stay Updated</h3>
+                    <p class="text-white mb-4">Subscribe to our newsletter for exclusive content and updates.</p>
+                    <form id="newsletter-form" class="space-y-3">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-blue-400 pt-8 text-center">
+                <p class="text-white text-sm">
+                    © 2023 s.s. college Jehanabad,Bihar All rights reserved. | Designed with passion for the best user experience.
+                </p>
+                <p class="text-white text-xs mt-2">
+                    Privacy Policy | Terms of Service | Cookie Policy
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+</content>
+</create_file>

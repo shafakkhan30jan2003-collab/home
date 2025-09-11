@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Inter', sans-serif;
+        }
+        .login-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .input-field {
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+            transform: scale(1.02);
+        }
+        .btn-login {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-login:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .logo-placeholder {
+            animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="login-container rounded-lg p-8 w-full max-w-md shadow-2xl">
+        <div class="text-center mb-8">
+            <div class="logo-placeholder mb-4">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41d6c68c-a316-48d2-8856-f475275b991a.png" alt="Circular logo depicting a stylized shield with a lock icon in the center, gradient from blue to purple, representing security and access control" class="mx-auto w-16 h-16 rounded-full object-cover" onerror="this.style.display='none';">
+            </div>
+            <h1 class="text-2xl font-bold text-white">Welcome Back</h1>
+            <p class="text-gray-200 mt-2">Please sign in to continue</p>
+        </div>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <div class="mb-4">
+                <label for="email" class="block text-gray-200 font-medium mb-2">Email Address</label>
+                <input type="email" id="email" class="input-field w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-gray-300/50 focus:outline-none" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-200 font-medium mb-2">Password</label>
+                <div class="relative">
+                    <input type="password" id="password" class="input-field w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-gray-300/50 focus:outline-none pr-12" placeholder="Enter your password" required>
+                    <span class="absolute right-3 top-3 text-gray-300 cursor-pointer hover:text-white" id="togglePassword" onclick="toggleVisibility()">👁️</span>
+                </div>
+            </div>
+            <button type="submit" class="btn-login w-full py-3 rounded-lg text-white font-semibold shadow-lg focus:outline-none">Sign In</button>
+        </form>
+        <div class="text-center mt-6">
+            <a href="register.html" class="text-gray-200 hover:text-white hover:underline">Forgot Password?</a>
+            <p class="mt-2 text-sm text-gray-200">Don't have an account? <a href="#" class="hover:text-white hover:underline">Sign up here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (replace with actual authentication logic)
+            if (email === 'test@example.com' && password === 'password') {
+                alert('Login Successful! Welcome to the portal.');
+                // Redirect or perform authentication action here
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+            console.log('Login attempt:', { email, password });
+        }
+
+        function toggleVisibility() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.getElementById('togglePassword');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.textContent = '🙈'; // Changed to text for no emoji
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.textContent = '👁️'; // Changed to text for no emoji
+            }
+        }
+
+        // Auto-focus on email field
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('email').focus();
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
