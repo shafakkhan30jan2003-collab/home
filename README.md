@@ -33,4 +33,4 @@ The aim of this project is to create a user-friendly interface for students and 
 - JavaScript
 
 -## 🌐 Demo video
-[Click here to view the website](https://drive.google.com/drive/u/0/my-drive)
+[Click here to view the website](https://drive.google.com/file/d/11WpYRmDfFFNFQHtp0MSarIZ2d5qa6n0B/view?usp=sharing)
